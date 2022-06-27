@@ -1,0 +1,12 @@
+<html>
+<body>
+<form method="get" action="/contacts/updateOne/{{element.id}}">
+<label for="fullname"> FullName: </label>
+<input type="text" name="FullName" id="fullname" value={{element.FullName}}>
+<label for="phone"> Phone: </label>
+<input type="number" name="Phone" id="phone" value={{element.Phone}}/>
+{# <a href="/contacts/updateOne/{{element.id}}">update</a> #}
+<button type="submit">Update</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body>
+<form method="post" action="/contacts/search">
+<input type="text" name="Identifier"/>
+<button type="submit">Search...</button>
+</form>
+
+<h1> {{ title }} </h1>
+<a href="/contacts/add">Create be contact</a>
+<table border="1">
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Phone</th>
+<th></th>
+<th></th>
+</tr>
+{% for c in cont %}
+<tr>
+<td> {{ c.id }} </td>
+<td> {{ c.FullName }} </td>
+<td> {{ c.Phone }} </td>
+<td>
+<a href="/contacts/delete/{{c.id}}">Delete</a>
+</td>
+<td>
+<a href="/contacts/update/{{c.id}}">Update</a>
+</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>
