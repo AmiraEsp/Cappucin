@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-weight: 800;
+            font-size: 16px;
+        }
+        label span{
+            font-weight: 400;
+            font-size: 16px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <img src="/images/{{ product.image }} " alt=""> 
+    <div style="margin-bottom: 25px;">
+        <label for="">
+            Name: 
+            <span> {{ product.name }} </span>
+        </label>
+    </div>
+</body>
+</html>
